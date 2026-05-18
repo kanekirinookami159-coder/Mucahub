@@ -1,9 +1,15 @@
 <?php
 
-if (session_status() == PHP_SESSION_NONE && !headers_sent()) {
-    session_start();
+$conn = mysqli_connect(
+    "ballast.proxy.rlwy.net",
+    "root",
+    "YAvrNoPpnQWBCrEeoVAZYTvfseuNeuKp",
+    "railway",
+    21696
+);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 
-$base_url = "http://localhost/school-lms/";
-
-date_default_timezone_set("Asia/Manila");
+?>
