@@ -1,0 +1,27 @@
+# PHP
+vendor/
+.env
+node_modules/
+.DS_Store
+/.idea
+/.vscode
+uploads/
+assets/uploads/
+
+# Composer
+composer.lock
+
+# Logs and temp
+logs/
+*.log
+tmp/
+
+# OS files
+Thumbs.db
+*~
+
+# XAMPP
+xamppfiles/
+
+# Ignore GitHub Copilot Chat session files
+.copilot/
